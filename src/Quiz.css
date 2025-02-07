@@ -1,0 +1,202 @@
+/* Quiz Container */
+.quiz-container {
+  max-width: 600px;
+  margin: auto;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Title & Description */
+.quiz-container h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.quiz-container p {
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Question Display */
+.question {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Answer Options */
+.quiz-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.quiz-container ul li {
+  background: #fff;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.quiz-container ul li:hover {
+  background: #007bff;
+  color: white;
+}
+
+.quiz-container ul li.selected {
+  background: #28a745;
+  color: white;
+}
+
+/* Timer */
+.timer {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 10px;
+}
+
+/* Buttons */
+.quiz-container button {
+  background: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.quiz-container button:hover {
+  background: #218838;
+}
+
+.quiz-container button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Progress Bar */
+.progress-bar {
+  height: 8px;
+  background: #ffc107;
+  border-radius: 10px;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Leaderboard */
+.leaderboard {
+  max-width: 600px;
+  margin: 20px auto;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: white;
+}
+
+.leaderboard h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.leaderboard ol {
+  list-style: none;
+  padding: 0;
+}
+
+.leaderboard ol li {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Leaderboard Container */
+.leaderboard {
+  max-width: 600px;
+  margin: 20px auto;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: white;
+}
+
+/* Title */
+.leaderboard h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Leaderboard List */
+.leaderboard ol {
+  list-style: none;
+  padding: 0;
+}
+
+/* Player Names */
+.leaderboard ol li {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* First Place - Gold */
+.leaderboard ol li:first-child {
+  background: gold;
+  color: black;
+}
+
+/* Second Place - Silver */
+.leaderboard ol li:nth-child(2) {
+  background: silver;
+  color: black;
+}
+
+/* Third Place - Bronze */
+.leaderboard ol li:nth-child(3) {
+  background: #cd7f32;
+  color: black;
+}
+
+/* Other Players - Blue Gradient */
+.leaderboard ol li:nth-child(n+4) {
+  background: linear-gradient(135deg, #66a6ff, #89f7fe);
+  color: white;
+}
